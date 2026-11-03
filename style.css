@@ -1,0 +1,92 @@
+header {
+    text-align: center;
+}
+
+header p {
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    margin-bottom: 1px;
+    color: #5f0535;
+}
+
+header h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 50px;
+    margin-top: 0;
+    color: #920f55;
+}
+
+body {
+    background-color: #ffecf6;
+}
+
+button {
+    border: 2px solid #920f55;
+    border-radius: 8px;
+    color: #920f55;
+    font-family: 'Caveat', sans-serif;
+    font-size: 16px;
+    width: 125px;
+    background-color: #fdc6e3;
+    font-weight: bold;
+    transition: background 0.12s ease;
+}
+
+button:hover {
+    background-color: #ec83bb;
+}
+
+.toolbar, .finalbutt {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.workspace {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0
+}
+
+.page {
+    background-image:
+        linear-gradient(
+            to right,
+            transparent 0,
+            transparent 68px,
+            #f3bccb 69px,
+            #f3bccb 71px,
+            transparent 72px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            #fffdf9 0px,
+            #fffdf9 30px,
+            #dce6ea 31px,
+            #fffdf9 32px
+        );
+
+    width: 550px;
+    height: 650px;
+    position: relative;
+    box-shadow: 2px 4px 15px #c99aaf;
+    border-radius: 3px;
+}
+
+.text h1 {
+    font-family: 'Parisienne'
+}
+
+.text h2 {
+    font-family: 'Caveat'
+}
+
+.text h3 {
+    font-family: 'Allura'
+}
+
+.text h4 {
+    font-family: 'Cormorant Garamond'
+}
