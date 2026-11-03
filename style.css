@@ -73,7 +73,26 @@ button:hover {
     position: relative;
     box-shadow: 2px 4px 15px #c99aaf;
     border-radius: 3px;
+    position: relative;
+    overflow: hidden;
 }
+
+.draggable {
+    position: absolute;
+    cursor: grab;
+    touch-action: none;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+#testSticker {
+    font-size: 50px;
+    left: 100px;
+    top: 100px;
+}
+
 
 .text h1 {
     font-family: 'Parisienne'
