@@ -42,6 +42,33 @@ button:hover {
     gap: 20px
 }
 
+.editor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.sticker-library {
+    width: 200px;
+    background: #fff9fc;
+    border: 2px solid #f3bccb;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.sticker-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.sticker-option {
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 .workspace {
     width: 100%;
     height: 650px;
@@ -81,6 +108,9 @@ button:hover {
     position: absolute;
     cursor: grab;
     touch-action: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 100px;
 }
 
 .draggable:active {

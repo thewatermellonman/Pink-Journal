@@ -16,17 +16,40 @@
 
     <nav class="toolbar">
         <button id="addPhoto">Add Photo</button>
-        <button id="addSticker">Add Sticker</button>
+        <label for="sizeSlider">Sticker Size</label>
+        <input
+            type="range"
+            id="sizeSlider"
+            min="30"
+            max="300"
+            value="100">
         <button id="addText">Add Text</button>
     </nav>
 
-    <section class="workspace">
-        <div class="page">
-            <div class="draggable" id="testSticker">
-                🎀
+    <main class="editor">
+        <aside class="sticker-library">
+            <h2>Sticker Book</h2>
+
+            <div class="sticker-page">
+                <img class="sticker-option" id="sticker1" draggable="false" src="./stickers/sticker1.png">
+                <img class="sticker-option" id="sticker2" draggable="false" src="./stickers/sticker2.png">
+                <img class="sticker-option" id="sticker3" draggable="false" src="./stickers/sticker3.png">
+                <img class="sticker-option" id="sticker4" draggable="false" src="./stickers/sticker4.png">
+                <img class="sticker-option" id="sticker5" draggable="false" src="./stickers/sticker5.png">
+                <img class="sticker-option" id="sticker6" draggable="false" src="./stickers/sticker6.png">
+                <img class="sticker-option" id="sticker7" draggable="false" src="./stickers/sticker7.png">
+                <img class="sticker-option" id="sticker8" draggable="false" src="./stickers/sticker8.png">
+                <img class="sticker-option" id="sticker9" draggable="false" src="./stickers/sticker9.png">
+                <img class="sticker-option" id="sticker10" draggable="false" src="./stickers/sticker10.png">
             </div>
-        </div>
-    </section>
+        </aside>
+
+        <section class="workspace">
+            <div class="page">
+                
+            </div>
+        </section>
+    </main>
 
     <div class="finalbutt">
         <button id="undo">Undo</button>
