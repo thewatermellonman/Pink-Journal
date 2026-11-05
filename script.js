@@ -3,17 +3,7 @@ const page = document.querySelector(".page");
 let selectedElement = null;
 const sizeSlider = document.getElementById("sizeSlider");
 
-const sticker1 = document.getElementById("sticker1");
-const sticker2 = document.getElementById("sticker2");
-const sticker3 = document.getElementById("sticker3");
-const sticker4 = document.getElementById("sticker4");
-const sticker5 = document.getElementById("sticker5");
-const sticker6 = document.getElementById("sticker6");
-const sticker7 = document.getElementById("sticker7");
-const sticker8 = document.getElementById("sticker8");
-const sticker9 = document.getElementById("sticker9");
-const sticker10 = document.getElementById("sticker10");
-
+const stickerOptions = document.querySelectorAll(".sticker-option");
 
 function positionSticker(element) {
     element.style.left = "225px";
@@ -45,19 +35,22 @@ function makeDraggable(element) {
     });
 }
 
+stickerOptions.forEach(function(sticker) {
+    sticker.addEventListener("click", function() {
+        const newSticker = sticker.cloneNode(true);
+
+        newSticker.classList.remove("sticker-option");
+        newSticker.classList.add("draggable");
+
+        page.appendChild(newSticker);
+
+        positionSticker(newSticker);
+        makeDraggable(newSticker);
+    })
+})
+
 sizeSlider.addEventListener("input", function() {
     if (selectedElement !== null) {
         selectedElement.style.width = sizeSlider.value + "px";
     }
 })
-
-makeDraggable(sticker1);
-makeDraggable(sticker2);
-makeDraggable(sticker3);
-makeDraggable(sticker4);
-makeDraggable(sticker5);
-makeDraggable(sticker6);
-makeDraggable(sticker7);
-makeDraggable(sticker8);
-makeDraggable(sticker9);
-makeDraggable(sticker10);

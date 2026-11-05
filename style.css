@@ -32,6 +32,48 @@ button {
     transition: background 0.12s ease;
 }
 
+.slide {
+    background-color:#fdc6e3;
+    padding: 6px;
+    border-radius: 8px;
+    color: #920f55;
+    border: 2px solid #920f55;
+    font-family: 'Caveat', sans-serif;
+    font-weight: bold;
+}
+
+.slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 12px;
+}
+
+.slider:focus {
+    outline: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    background: #e9ecef;
+    border-radius: 6px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #920f55;
+    margin-top: -4px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
 button:hover {
     background-color: #ec83bb;
 }
@@ -51,6 +93,9 @@ button:hover {
 
 .sticker-library {
     width: 200px;
+    height: 600px;
+    overflow-y: auto;
+    flex-shrink: 0;
     background: #fff9fc;
     border: 2px solid #f3bccb;
     border-radius: 15px;
@@ -64,6 +109,9 @@ button:hover {
 }
 
 .sticker-option {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
     cursor: grab;
     user-select: none;
     -webkit-user-drag: none;
@@ -100,7 +148,6 @@ button:hover {
     position: relative;
     box-shadow: 2px 4px 15px #c99aaf;
     border-radius: 3px;
-    position: relative;
     overflow: hidden;
 }
 
@@ -117,12 +164,17 @@ button:hover {
     cursor: grabbing;
 }
 
-#testSticker {
-    font-size: 50px;
-    left: 100px;
-    top: 100px;
+.sticker-library {
+    margin-top: 20px;
 }
 
+.sticker-library h2 {
+    color:#920f55;
+    font-family: 'Caveat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
 
 .text h1 {
     font-family: 'Parisienne'
