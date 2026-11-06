@@ -1,5 +1,7 @@
 const page = document.querySelector(".page");
 
+const textButton = document.getElementById("addText")
+
 let selectedElement = null;
 const sizeSlider = document.getElementById("sizeSlider");
 
@@ -47,6 +49,15 @@ stickerOptions.forEach(function(sticker) {
         positionSticker(newSticker);
         makeDraggable(newSticker);
     })
+})
+
+textButton.addEventListener("click", function() {
+    const newText = document.createElement("textarea");
+    newText.value = "Type something here";
+    newText.classList.add("draggable");
+    page.appendChild(newText);
+    positionSticker(newText);
+    makeDraggable(newText);
 })
 
 sizeSlider.addEventListener("input", function() {

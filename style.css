@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     text-align: center;
 }
@@ -18,6 +22,7 @@ header h1 {
 
 body {
     background-color: #ffecf6;
+    padding: 0 20px;
 }
 
 button {
@@ -87,15 +92,19 @@ button:hover {
 .editor {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 25px;
+    margin: 20px auto;
+    width: fit-content;
 }
 
 .sticker-library {
-    width: 200px;
-    height: 600px;
+    box-sizing: border-box;
+    width: 230px;
+    height: 650px;
     overflow-y: auto;
     flex-shrink: 0;
+    margin: 0;
     background: #fff9fc;
     border: 2px solid #f3bccb;
     border-radius: 15px;
@@ -118,11 +127,11 @@ button:hover {
 }
 
 .workspace {
-    width: 100%;
-    height: 650px;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: center;
-    margin: 20px 0 20px 0
+    margin: 0;
 }
 
 .page {
@@ -174,6 +183,18 @@ button:hover {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+}
+
+textarea.draggable {
+    width: 150px;
+    height: 60px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: #920f55;
+    background: transparent;
+    border: none;
+    resize: both;
+    padding: 5px;
 }
 
 .text h1 {
